@@ -11,7 +11,9 @@ const MoviePage = () => {
 
   // 서치
   const search = async query => {
-    await fetch(`${query}?api_key=8df1b7ac0cd122f9e0416e833e1f271c`)
+    await fetch(
+      `${query}?api_key=8df1b7ac0cd122f9e0416e833e1f271c&language=ko-KR`,
+    )
       .then(response => response.json())
       .then(result => setMovies(result.results))
       .catch(error => console.log(error));
@@ -19,7 +21,7 @@ const MoviePage = () => {
 
   useEffect(() => {
     fetch(
-      'https://api.themoviedb.org/3/movie/popular?api_key=8df1b7ac0cd122f9e0416e833e1f271c',
+      'https://api.themoviedb.org/3/movie/popular?api_key=8df1b7ac0cd122f9e0416e833e1f271c&language=ko-KR',
     )
       .then(response => response.json())
       .then(result => setMovies(result.results))
