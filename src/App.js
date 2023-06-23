@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/unsplash" element={<UnsplashPage />} />
         <Route path="/movie" element={<MoviePage />} />
       </Routes>
-      <Footer attr={'footer__wrap score5 section'} />
+      <Footer attr={'footer__wrap score5 section bg-green'} />
     </BrowserRouter>
   );
 };

@@ -331,8 +331,8 @@ function IntroSection() {
           </button>
         </div>
         <div className="Intro__content">
-          {/* <h3>{introMenu[activeButton]}</h3> */}
-          {/* <p>{introDesc[activeButton]}</p> */}
+          <h3>{introMenu[activeButton]}</h3>
+          <p>{introDescription[activeButton]}</p>
           <ul>
             {introData.map(item => (
               <li key={item.id}>
