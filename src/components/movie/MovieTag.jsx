@@ -33,7 +33,7 @@ const MovieTag = ({ onSearch }) => {
               key={index}
               className={tag.name === activeTag ? 'active' : ''}
             >
-              <a hef="/">{tag.name}</a>
+              <a href="/">{tag.name}</a>
             </li>
           ))}
         </ul>
