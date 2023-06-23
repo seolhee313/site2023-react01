@@ -1,49 +1,48 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper';
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
-import 'swiper/css/effect-coverflow';
-// import 'swiper/css/bundel'
 
-const MovieImg = ({ movie }) => {
-  return (
-    <Link to={`https://www.themoviedb.org/movie/${movie.id}`}>
-      <img
-        src={`https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}`}
-        alt={movie.title}
-      />
-    </Link>
-  );
-};
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
+import { EffectCoverflow, Pagination, Autoplay } from 'swiper';
 
 const MovieSlider = ({ movies }) => {
   return (
-    <div className="movie__slider">
+    <section className="movie__slider">
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'auto'}
-        spaceBetween={30}
+        slidesPerView={'5'}
+        initialSlide="3"
         autoplay={{
-          delay: 2500,
-          disableOnInteraction: true,
+          delay: 5000,
+          disableOnInteraction: false,
         }}
-        pagination={true}
-        navigation={true}
-        modules={[Autoplay, Navigation, Pagination]}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        // pagination={true}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
+        className="mySwiper"
       >
-        {movies.map((movie, index) => (
-          <SwiperSlide>
-            <MovieImg key={index} movie={movie} />
-          </SwiperSlide>
-        ))}
+        {movies.map((movie, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                alt={movie.title}
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
-    </div>
+    </section>
   );
 };
 

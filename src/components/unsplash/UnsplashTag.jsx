@@ -1,29 +1,28 @@
 import React from 'react';
 
-const UnsplashTag = ({ onTagClick }) => {
-  const handleTagClick = (tag) => {
-    onTagClick(tag);
-  };
+const unsplashTag = [
+  { name: '바다' },
+  { name: '산' },
+  { name: '하늘' },
+  { name: '꽃' },
+  { name: '나무' },
+];
 
+const UnsplashTag = ({ onSearch }) => {
+  function btnClick(e) {
+    onSearch(e.target.innerText);
+  }
   return (
-    <div className="unsplash__tag">
-      <ul>
-        <li>
-          <button onClick={() => handleTagClick('바다')}>바다</button>
-        </li>
-        <li>
-          <button onClick={() => handleTagClick('산')}>산</button>
-        </li>
-        <li>
-          <button onClick={() => handleTagClick('하늘')}>하늘</button>
-        </li>
-        <li>
-          <button onClick={() => handleTagClick('꽃')}>꽃</button>
-        </li>
-        <li>
-          <button onClick={() => handleTagClick('나무')}>나무</button>
-        </li>
-      </ul>
+    <div className="unsplash__tag container">
+      <div>
+        <ul>
+          {unsplashTag.map((tag, index) => (
+            <button onClick={btnClick} key={index}>
+              {tag.name}
+            </button>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

@@ -14,10 +14,7 @@ const Header = props => {
         <div className="header__nav" role="navigation">
           <ul>
             <li>
-              <Link to="/intro">소개</Link>
-            </li>
-            <li>
-              <Link to="/member">멤버</Link>
+              <Link to="/intro">아티스트</Link>
             </li>
             <li>
               <Link to="/mv">MV</Link>

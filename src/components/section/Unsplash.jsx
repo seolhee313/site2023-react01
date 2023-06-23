@@ -13,7 +13,7 @@ const Unsplash = props => {
             <br />
             상업적 이용은 피해주세요!
           </p>
-          <Link to="/" className="button-green">
+          <Link to="/unsplash" className="button-green">
             자세히 보기
           </Link>
         </div>

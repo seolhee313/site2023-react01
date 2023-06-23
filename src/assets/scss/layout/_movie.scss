@@ -3,7 +3,8 @@
     overflow: hidden;
 }
 .movie__inner {
-    height: 730px;
+    height: 780px;
+
     .movie__text {
         h3 {
             font-size: 50px;
@@ -12,7 +13,7 @@
         p {
             font-size: 22px;
             font-weight: 300;
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }
         a {
             @include border(50px);
@@ -23,64 +24,57 @@
         margin-top: 70px;
         position: absolute;
         > div {
-            width: 268px;
+            width: 300px;
+            margin-right: 20px;
+
             img {
                 width: 100%;
-                padding: 0 20px 0 0;
+                // padding: 0 20px 0 0;
                 @include border(20px);
             }
         }
     }
 }
 
-// movie__page
+//movie__cont
 .movie__cont {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "GmarketSans";
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 100px;
-        li {
-            width: 23.3333%;
-            margin-bottom: 4%;
-            position: relative;
-            img {
-                width: 100%;
-                border-radius: 20px;
-                box-shadow: 0px 10px 10px #00000022;
-            }
-            em {
-                .title{
-                    font-size: 20px;
-                    padding: 3px 0;
-                    &:hover {
-                        text-decoration: underline;
-                        text-underline-position: under;
-                    }
-                }
-                .star {
-                    position: absolute;
-                    right: 20px;
-                    top: 20px;
-                    width: 40px;
-                    height: 40px;
-                    background-color: #fff;
-                    text-align: center;
-                    line-height: 40px;
-                    border-radius: 50%;
-                    font-size: 15px;
-                    color: #4b4bff;
-                }
-            }
-            span {
-                display: block;
-                margin: 4px 0;
-            }
+    li {
+      width: 24%;
+      position: relative;
+      margin-bottom: 2%;
+
+      .title {
+        font-size: 20px;
+        padding: 3px 0;
+        display: inline-block;
+
+        &:hover {
+          text-decoration: underline;
+          text-underline-position: under;
         }
+      }
+      .star {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        font-size: 12px;
+      }
     }
+  }
 }
-    
+
 // movie__search
 .movie__search {
     text-align: center;
@@ -113,25 +107,37 @@
             height: 850px;
         }
     }
+    .swiper-3d {
+      perspective: 1200px;
+      padding: 20px;
+  }
 }
 
 .movie__tag {
-    
     ul {
-        display: flex;
-        justify-content: center;
-        margin-top: 100px;
-        margin-bottom: 50px;
-
-        li {
-            button {
-                border: 1px solid #4857EC;
-                padding: 10px 20px;
-                margin: 0 10px;
-                color: #4857EC;
-                background-color: #fff;
-                cursor: pointer;
-            }
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+      margin-bottom: 50px;
+  
+      li {
+        a {
+          display: inline-block;
+          border: 1px solid #4857ec;
+          padding: 5px 20px;
+          margin: 0 10px;
+          color: #4857ec;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #4857ec;
+            color: #fff;
+          }
         }
+      }
+      li.active a {
+        background-color: #4857ec;
+        color: #fff;
+      }
     }
-}
+  }

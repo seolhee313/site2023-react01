@@ -41,7 +41,7 @@ const Mv = props => {
               </div>
               <div className="title">
                 <h4>(여자)아이들((G)I-DLE) - 퀸카</h4>
-                <span>조회수 9543만회 · 2주 전</span>
+                <span>조회수 1.2억회 · 1개월 전</span>
               </div>
             </div>
           </div>
@@ -57,13 +57,13 @@ const Mv = props => {
               </div>
               <div className="title">
                 <h4>aeapa 에스파 'Spicy' MV</h4>
-                <span>조회수 7976만회 · 3주 전</span>
+                <span>조회수 8850만회 · 1개월 전</span>
               </div>
             </div>
           </div>
           <div className="mv">
             <figure className="mv__header">
-              <a href="https://www.youtube.com/watch?v=6ZUIwj3FgUY">
+              <a href="https://www.youtube.com/watch?v=pG6iaOMV46I">
                 <img src="./assets/images/mv/mv03.svg" alt="아이브" />
               </a>
             </figure>
@@ -73,7 +73,7 @@ const Mv = props => {
               </div>
               <div className="title">
                 <h4>IVE 아이브 'Kitsch' MV</h4>
-                <span>조회수 6967만회 · 2개월 전</span>
+                <span>조회수 7615만회 · 2개월 전</span>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Mv = props => {
               </div>
               <div className="title">
                 <h4>LE SSERAFIM (르세라핌) 'UNFORGIVEN'</h4>
-                <span>조회수 7146만회 · 4주 전</span>
+                <span>조회수 7955만회 · 1개월 전</span>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ const Mv = props => {
               </div>
               <div className="title">
                 <h4>BLACKPINK - ‘Pink Venom’ M/V</h4>
-                <span>조회수 6.4억회 · 9개월 전</span>
+                <span>조회수 6.6억회 · 10개월 전</span>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ const Mv = props => {
               </div>
               <div className="title">
                 <h4>NewJeans (뉴진스) 'Attention' MV</h4>
-                <span>조회수 4918만회 · 10개월 전</span>
+                <span>조회수 5008만회 · 11개월 전</span>
               </div>
             </div>
           </div>

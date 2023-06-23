@@ -84,3 +84,143 @@
         }
     }
 }
+
+
+
+
+
+// youtube__section
+.youtube__wrap {
+    overflow: hidden;
+}
+.youtube__inner {
+    height: 600px;
+    
+    .youtube__text {
+
+        h3 {
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 22px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        a {
+            @include border(50px);
+            // margin-bottom: 100px;
+        }
+    }
+    .youtube__item {
+        @include flex-between;
+        margin-top: 70px;
+        width: auto;
+        position: absolute;
+    
+        > div {
+            width: 400px;
+            margin-right: 20px;
+
+            > span {
+                font-size: 20px;
+            }
+            
+            img {
+                width: 100%;
+                margin-bottom: 20px;
+                @include border(10px);
+            }
+        }
+    }
+}
+
+// Mv__page
+.Mv__page {}
+.Mv__slider {
+    display: none;
+}
+.Mv__search {
+    text-align: center;
+    margin-bottom: 50px;
+
+    input {
+        border: 1px solid #e8ecf2;
+        font-size: 16px;
+        padding: 10px 20px;
+        @include border(50px);
+        min-width: 300px;
+        margin-right: 10px;
+    }
+    button {
+        @include button (#00c183, #fff);
+        @include border(50px)
+    }
+}
+.Mv__tag {
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+        li {
+            a {
+                border: 1px solid #00c183;
+                padding: 10px 20px;
+                margin: 0 10px;
+                color: #00c183;
+            }
+        }
+    }
+}
+.Mv__cont {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        li {
+            width: 24%;
+            margin-bottom: 4%;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            span {
+                display: block;
+                margin: 4px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.Mv__tag {
+    div {
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        margin-bottom: 50px;
+  
+        button {
+          border: 1px solid #00c183;
+          padding: 10px 20px;
+          margin: 0 10px;
+          margin-bottom: 10px;
+          color: #00c183;
+          background-color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+  }

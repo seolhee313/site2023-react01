@@ -12,7 +12,7 @@ const youtube = props => {
             <br />
             음악을 사랑하는 이들을 위한 열정이 가득한 유튜버들을 만나보세요.
           </p>
-          <Link to="/" className="button-red">
+          <Link to="/youtube" className="button-red">
             자세히 보기
           </Link>
         </div>

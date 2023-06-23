@@ -111,20 +111,23 @@
         }
     }
 }
-.youtube__tag {
-    
-    ul {
-        display: flex;
-        justify-content: center;
-        margin-top: 100px;
-        margin-bottom: 50px;
 
-        li {
-            a {
+.youtube__tag {
+    div {
+
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+
+            button {
                 border: 1px solid #f7100d;
                 padding: 10px 20px;
                 margin: 0 10px;
                 color: #f7100d;
+                background-color: #fff;
+                cursor: pointer;
             }
         }
     }

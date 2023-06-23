@@ -12,7 +12,7 @@ const Movie = props => {
             <br />
             음악이 주는 힘을 영화를 통해 더욱 깊이 경험해보세요!
           </p>
-          <Link to="/" className="button-blue">
+          <Link to="/movie" className="button-blue">
             자세히 보기
           </Link>
         </div>

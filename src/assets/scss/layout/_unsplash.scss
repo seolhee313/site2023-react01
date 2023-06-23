@@ -72,28 +72,32 @@
         justify-content: center;
 
         img {
-            width: 50%;
-            height: 650px;
+            object-fit: cover;
+            width: 100%;
+            height: 500px;
         }
     }
 }
 
 .unsplash__tag {
-    
-    ul {
-        display: flex;
-        justify-content: center;
-        margin-top: 100px;
-        margin-bottom: 50px;
+    div {
 
-        li {
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+
             button {
                 border: 1px solid #4857EC;
                 padding: 10px 20px;
                 margin: 0 10px;
                 color: #4857EC;
                 background-color: #fff;
+                cursor: pointer;
             }
         }
     }
 }
+
+

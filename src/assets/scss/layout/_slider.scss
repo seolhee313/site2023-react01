@@ -1,4 +1,8 @@
 // slider__wrap
+.swiper {
+    padding: 20px 0 50px;
+}
+
 .slider__wrap {}
 .slider__inner {
     position: relative;
@@ -17,27 +21,74 @@
                     text-transform: uppercase;
                     line-height: 1;
                     margin-bottom: 40px;
-                    padding-top: 100px;
+                    padding-top: 110px;
+
+                    em {
+                        color: #4857ec;
+                    }
+                    .youtube {
+                        color: #FF3344;
+                    }
+                    .movie {
+                        color: #00c183;
+                    }
+                }
                 }
                 p {
                     font-size: 24px;
                     line-height: 1.3;
                     margin-bottom: 50px;
                 }
-                .more {
+                .more1 {
                     font-size: 18px;
                     margin-bottom: 100px;
+                    border-radius: 50px;
+                    background-color: #fff;
+                    border: 2px solid #4857ec;
+                    color: #4857ec;
+
+                    &:hover {
+                        background-color: #4857ec;
+                        color: #fff;
+                    }
                 }
+                .more2 {
+                    font-size: 18px;
+                    margin-bottom: 100px;
+                    border-radius: 50px;
+                    background-color: #fff;
+                    border: 2px solid #FF3344;
+                    color: #FF3344;
+
+                    &:hover {
+                        background-color: #FF3344;
+                        color: #fff;
+                    }
+                }
+                .more3 {
+                    font-size: 18px;
+                    margin-bottom: 100px;
+                    border-radius: 50px;
+                    background-color: #fff;
+                    border: 2px solid #00c183;
+                    color: #00c183;
+
+                    &:hover {
+                        background-color: #00c183;
+                        color: #fff;
+                    }
+                }
+                
             }
     
             .img {
                 position: absolute;
                 right: 0;
-                top: -20px;
+                top: 0;
                 width: 600px;
                 height: 600px;
                 background-image: url(../../images/icon/iconbg.png);
-                background-size: cover;
+                background-size: cover; 
 
                 img {
                     &:nth-child(1){
@@ -56,6 +107,12 @@
                         position: absolute;
                         width: 330px;
                         top: 2px;
+                        left: -30px;
+                    }
+                    &.camera {
+                        position: absolute;
+                        width: 320px;
+                        top: 40px;
                         left: -30px;
                     }
                 }
@@ -105,7 +162,6 @@
                 }
             }
         }
-    }
 
     .slider__btn {
         > a {
@@ -152,3 +208,4 @@
         }
     }
 }
+
