@@ -279,7 +279,7 @@ function IntroDesc({ introImg, iconImg, title, desc, link }) {
 function IntroSection() {
   const [activeButton, setActiveButton] = useState(introMenu.menu1);
   const [introData, setIntroData] = useState(introText);
-  const [setIntroDescription] = useState(introDesc.menu1);
+  const [introDescription, setIntroDescription] = useState(introDesc.menu1);
 
   const handleButtonClick = buttonName => {
     setActiveButton(buttonName);
