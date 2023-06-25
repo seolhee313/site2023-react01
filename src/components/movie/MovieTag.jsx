@@ -13,6 +13,7 @@ const MovieTag = ({ onSearch }) => {
   const [activeTag, setActiveTag] = useState('인기영화');
 
   function btnClick(e) {
+    e.preventDefault(); // 기본 동작 막기
     const clickedTag = movieTagList.find(
       tag => tag.name === e.target.innerText,
     );
@@ -33,7 +34,9 @@ const MovieTag = ({ onSearch }) => {
               key={index}
               className={tag.name === activeTag ? 'active' : ''}
             >
-              <a href="/">{tag.name}</a>
+              <a href="/" onClick={btnClick}>
+                {tag.name}
+              </a>
             </li>
           ))}
         </ul>

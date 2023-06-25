@@ -6,7 +6,7 @@ import IntroCont from '../intro/IntroCont';
 const IntroPage = () => {
   return (
     <Contents>
-      <ContTitle title="intro" />
+      <ContTitle title="artist" />
       <IntroCont />
     </Contents>
   );

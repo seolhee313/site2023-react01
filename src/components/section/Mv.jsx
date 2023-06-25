@@ -13,18 +13,7 @@ const Mv = props => {
         <div className="mv__btn">
           <ul>
             <li>
-              <Link to="/" className="active">
-                K-pop
-              </Link>
-            </li>
-            <li>
-              <Link to="/">Pop</Link>
-            </li>
-            <li>
-              <Link to="/">Hip-hop</Link>
-            </li>
-            <li>
-              <Link to="/">R&B</Link>
+              <Link to="/mv">더 많은 MV 보러가기</Link>
             </li>
           </ul>
         </div>
