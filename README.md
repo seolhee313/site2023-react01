@@ -8,7 +8,6 @@ API를 이 용한 유튜브 페이지에서 동영상 목록과 검색이 가능
 - 작업 기간 : 7일
 
 
-
 ## 사용 스택
 
 - React 18.2.0
@@ -17,9 +16,9 @@ API를 이 용한 유튜브 페이지에서 동영상 목록과 검색이 가능
 
 ## 특징
 
-- [YOUTUBE](https://console.cloud.google.com/apis/) API
-- [UNSPLASH](https://www.postman.com/downloads/) API
-- [MOVIE](https://www.themoviedb.org/?language=ko) API
+- [YOUTUBE](https://console.cloud.google.com/apis/) API를 이용한 목록, 검색 기능 구현
+- [UNSPLASH](https://www.postman.com/downloads/) API를 이용한 목록, 검색, 이미지 슬라이드 구현
+- [MOVIE](https://www.themoviedb.org/?language=ko) API를 이용한, 목록, 검색, 이미지 슬라이드 구현
 
 
 ## 학습
@@ -28,13 +27,6 @@ API를 이 용한 유튜브 페이지에서 동영상 목록과 검색이 가능
 - JSX를 사용하여 컴포넌트의 구조를 선언적이고 직관적으로 표현할 수 있으며, 컴포넌트의 렌더링을 쉽게 구성할 수 있습니다.
 - 가상 DOM을 사용하여 DOM 조작을 최소화하고 변경 사항을 효율적으로 감지하여 불필요한 렌더링을 방지합니다.
 - 리액트는 단방향 데이터 흐름을 지원합니다. 데이터는 상위 컴포넌트에서 하위 컴포넌트로만 전달되며, 하위 컴포넌트는 상위 컴포넌트의 데이터를 수정할 수 없습니다. 이로 인해 데이터의 흐름이 예측 가능하고 유지 보수가 용이해집니다.
-
-
-## Screenshots
-
-![image](https://github.com/seolhee313/site2023-react01/assets/125417882/925a3aeb-51f4-4131-8a37-8296b62817b7)
-![image](https://github.com/seolhee313/site2023-react01/assets/125417882/cfd14920-6c5d-45f6-9252-4c5533a2d76d)
-![image](https://github.com/seolhee313/site2023-react01/assets/125417882/1cc35930-2eda-462e-a3cc-ca0b17f06b64)
 
 
 ## 개발 환경 프로젝트 실행 방법 
@@ -51,3 +43,10 @@ API를 이 용한 유튜브 페이지에서 동영상 목록과 검색이 가능
 1. **YOUTUBE :** ([ YouTube Data API v3 ](https://console.cloud.google.com/apis/)에서 API Key 발급 필요)
 1. **UNSPLASH :** ([ postman ](https://www.postman.com/downloads/)에서 API Key 발급 필요)
 1. **MOVIE :** ([ themoviedb ](https://www.themoviedb.org/?language=ko)에서 API Key 발급 필요)
+
+
+## Screenshots
+
+![image](https://github.com/seolhee313/site2023-react01/assets/125417882/925a3aeb-51f4-4131-8a37-8296b62817b7)
+![image](https://github.com/seolhee313/site2023-react01/assets/125417882/cfd14920-6c5d-45f6-9252-4c5533a2d76d)
+![image](https://github.com/seolhee313/site2023-react01/assets/125417882/1cc35930-2eda-462e-a3cc-ca0b17f06b64)
